@@ -1,0 +1,351 @@
+01:39:17,383 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:39:17,592 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:39:17,809 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+01:39:17,815 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:39:17,815 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=165 ms, enhance=55 ms, total=220 ms. Consult the log for full details
+01:41:37,810 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:41:38,018 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:41:38,242 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+01:41:38,247 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:41:38,248 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=172 ms, enhance=54 ms, total=226 ms. Consult the log for full details
+01:42:27,225 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:42:27,432 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:42:27,652 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+01:42:27,657 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:42:27,658 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=166 ms, enhance=56 ms, total=222 ms. Consult the log for full details
+01:42:33,897 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:42:34,107 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:42:58,063 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:42:58,271 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:43:09,813 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:43:10,020 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:45:05,523 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:45:05,731 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:45:05,948 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+01:45:05,954 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:45:05,955 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=166 ms, enhance=54 ms, total=220 ms. Consult the log for full details
+01:47:25,730 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:47:25,938 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:47:26,155 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+01:47:26,161 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:47:26,161 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=166 ms, enhance=54 ms, total=220 ms. Consult the log for full details
+01:50:18,233 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:50:18,453 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:50:18,683 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+01:50:18,690 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:50:18,690 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=177 ms, enhance=56 ms, total=233 ms. Consult the log for full details
+01:51:24,701 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:51:24,908 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:51:25,136 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+01:51:25,142 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:51:25,143 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=174 ms, enhance=56 ms, total=230 ms. Consult the log for full details
+01:53:55,123 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:53:55,335 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:53:55,560 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+01:53:55,568 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:53:55,568 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=171 ms, enhance=58 ms, total=229 ms. Consult the log for full details
+01:56:03,062 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:56:03,276 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:56:03,478 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+01:56:03,505 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+01:56:03,553 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=173 ms, enhance=100 ms, total=273 ms. Consult the log for full details
+01:56:05,601 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+01:56:05,813 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+01:56:06,016 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+01:56:06,018 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+01:56:06,018 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=173 ms, enhance=29 ms, total=202 ms. Consult the log for full details
+02:18:12,589 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:18:12,797 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:18:12,997 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+02:18:13,024 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+02:18:13,025 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=170 ms, enhance=53 ms, total=223 ms. Consult the log for full details
+02:18:50,516 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:18:50,723 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:18:50,923 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+02:18:50,950 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+02:18:50,950 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=170 ms, enhance=53 ms, total=223 ms. Consult the log for full details
+02:18:53,232 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:18:53,440 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:18:53,640 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+02:18:53,642 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+02:18:53,642 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=171 ms, enhance=28 ms, total=199 ms. Consult the log for full details
+02:42:37,561 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:42:37,782 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:42:38,028 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PMF.class" with enhanced definition
+02:42:38,030 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+02:42:38,034 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\BalanceSheet.class" with enhanced definition
+02:42:38,036 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+02:42:38,036 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=197 ms, enhance=53 ms, total=250 ms. Consult the log for full details
+02:51:48,686 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:51:48,894 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:51:49,073 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Class in.co.blackphoenix.shexp.jdo.PerUserTransaction has field in.co.blackphoenix.shexp.jdo.PerUserTransaction.myBill declared in MetaData, but this field doesnt exist in the class!
+org.datanucleus.metadata.InvalidMetaDataException: Class in.co.blackphoenix.shexp.jdo.PerUserTransaction has field in.co.blackphoenix.shexp.jdo.PerUserTransaction.myBill declared in MetaData, but this field doesnt exist in the class!
+	at org.datanucleus.metadata.ClassMetaData.populateMemberMetaData(ClassMetaData.java:552)
+	at org.datanucleus.metadata.ClassMetaData.populate(ClassMetaData.java:210)
+	at org.datanucleus.metadata.MetaDataManager$1.run(MetaDataManager.java:2659)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.datanucleus.metadata.MetaDataManager.populateAbstractClassMetaData(MetaDataManager.java:2653)
+	at org.datanucleus.metadata.MetaDataManager.populateFileMetaData(MetaDataManager.java:2476)
+	at org.datanucleus.metadata.MetaDataManager.initialiseFileMetaDataForUse(MetaDataManager.java:1086)
+	at org.datanucleus.metadata.MetaDataManager.loadMetadataFiles(MetaDataManager.java:441)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:814)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:590)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1390)
+02:52:34,277 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:52:34,485 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:52:34,715 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+02:52:34,740 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+02:52:34,764 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+02:52:34,770 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+02:52:34,771 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=201 ms, enhance=81 ms, total=282 ms. Consult the log for full details
+02:55:04,137 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:55:04,345 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:55:04,576 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+02:55:04,602 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+02:55:04,604 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+02:55:04,610 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+02:55:04,634 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=203 ms, enhance=83 ms, total=286 ms. Consult the log for full details
+02:57:11,678 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:57:11,889 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:57:12,119 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+02:57:12,145 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+02:57:12,147 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+02:57:12,148 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+02:57:12,149 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=202 ms, enhance=54 ms, total=256 ms. Consult the log for full details
+02:57:14,803 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:57:15,010 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:57:15,243 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+02:57:15,244 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+02:57:15,246 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+02:57:15,248 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+02:57:15,248 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=203 ms, enhance=32 ms, total=235 ms. Consult the log for full details
+02:59:23,196 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:59:23,402 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:59:23,639 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+02:59:23,665 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+02:59:23,667 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+02:59:23,669 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+02:59:23,669 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=206 ms, enhance=57 ms, total=263 ms. Consult the log for full details
+02:59:55,539 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+02:59:55,749 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+02:59:55,926 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Class in.co.blackphoenix.shexp.jdo.Bill has field in.co.blackphoenix.shexp.jdo.Bill.id declared in MetaData, but this field doesnt exist in the class!
+org.datanucleus.metadata.InvalidMetaDataException: Class in.co.blackphoenix.shexp.jdo.Bill has field in.co.blackphoenix.shexp.jdo.Bill.id declared in MetaData, but this field doesnt exist in the class!
+	at org.datanucleus.metadata.ClassMetaData.populateMemberMetaData(ClassMetaData.java:552)
+	at org.datanucleus.metadata.ClassMetaData.populate(ClassMetaData.java:210)
+	at org.datanucleus.metadata.MetaDataManager$1.run(MetaDataManager.java:2659)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.datanucleus.metadata.MetaDataManager.populateAbstractClassMetaData(MetaDataManager.java:2653)
+	at org.datanucleus.metadata.MetaDataManager.populateFileMetaData(MetaDataManager.java:2476)
+	at org.datanucleus.metadata.MetaDataManager.initialiseFileMetaDataForUse(MetaDataManager.java:1086)
+	at org.datanucleus.metadata.MetaDataManager.loadMetadataFiles(MetaDataManager.java:441)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:814)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:590)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1390)
+03:00:15,811 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+03:00:16,020 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+03:00:16,250 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+03:00:16,274 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+03:00:16,276 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+03:00:16,277 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+03:00:16,278 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=201 ms, enhance=53 ms, total=254 ms. Consult the log for full details
+03:02:16,057 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+03:02:16,267 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+03:02:16,498 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+03:02:16,522 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+03:02:16,524 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+03:02:16,526 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+03:02:16,526 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=202 ms, enhance=53 ms, total=255 ms. Consult the log for full details
+03:03:39,232 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+03:03:39,440 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+03:03:39,672 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+03:03:39,697 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+03:03:39,699 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+03:03:39,701 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+03:03:39,701 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=202 ms, enhance=56 ms, total=258 ms. Consult the log for full details
+03:03:50,703 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema
+03:03:50,704 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03:03:50,704 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\asm-3.3.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-dbcp-1.3.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-pool-1.5.5.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\log4j-1.2.14.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\jdo-api-3.0.1.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\mysql-connector-java-5.1.18-bin.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jdo-3.0.5.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jpa-3.0.6.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-enhancer-3.0.1.jar
+03:03:50,705 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-rdbms-3.0.6.jar
+03:03:50,706 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-core-3.0.6.jar
+03:03:51,356 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+03:03:51,356 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\BalanceSheet.class
+03:03:51,357 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class
+03:03:51,357 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PMF.class
+03:03:51,357 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class
+03:03:51,357 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\package.jdo
+03:03:51,357 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\test\JdoFKTest.class
+03:03:51,357 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\src\in\co\blackphoenix\shexp\jdo\package.jdo
+03:03:51,645 (main) INFO  [DataNucleus.SchemaTool] - SchemaTool completed successfully
+03:05:56,225 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Deletion of the schema
+03:05:56,226 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03:05:56,226 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin
+03:05:56,226 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\asm-3.3.jar
+03:05:56,226 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-dbcp-1.3.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-pool-1.5.5.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\log4j-1.2.14.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\jdo-api-3.0.1.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\mysql-connector-java-5.1.18-bin.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jdo-3.0.5.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jpa-3.0.6.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-enhancer-3.0.1.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-rdbms-3.0.6.jar
+03:05:56,227 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-core-3.0.6.jar
+03:05:56,875 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+03:05:56,875 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\BalanceSheet.class
+03:05:56,875 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class
+03:05:56,875 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PMF.class
+03:05:56,875 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class
+03:05:56,875 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\package.jdo
+03:05:56,875 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\test\JdoFKTest.class
+03:05:56,875 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\src\in\co\blackphoenix\shexp\jdo\package.jdo
+03:05:57,013 (main) ERROR [DataNucleus.MetaData] - An error was encountered reading the specified input files. Please consult the log for details. The following may help : Class in.co.blackphoenix.shexp.jdo.PerUserTransaction has field in.co.blackphoenix.shexp.jdo.PerUserTransaction.myid declared in MetaData, but this field doesnt exist in the class!
+Class in.co.blackphoenix.shexp.jdo.PerUserTransaction has field in.co.blackphoenix.shexp.jdo.PerUserTransaction.myid declared in MetaData, but this field doesnt exist in the class!
+org.datanucleus.metadata.InvalidMetaDataException: Class in.co.blackphoenix.shexp.jdo.PerUserTransaction has field in.co.blackphoenix.shexp.jdo.PerUserTransaction.myid declared in MetaData, but this field doesnt exist in the class!
+	at org.datanucleus.metadata.ClassMetaData.populateMemberMetaData(ClassMetaData.java:552)
+	at org.datanucleus.metadata.ClassMetaData.populate(ClassMetaData.java:210)
+	at org.datanucleus.metadata.MetaDataManager$1.run(MetaDataManager.java:2659)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.datanucleus.metadata.MetaDataManager.populateAbstractClassMetaData(MetaDataManager.java:2653)
+	at org.datanucleus.metadata.MetaDataManager.populateFileMetaData(MetaDataManager.java:2476)
+	at org.datanucleus.metadata.MetaDataManager.initialiseFileMetaDataForUse(MetaDataManager.java:1086)
+	at org.datanucleus.metadata.MetaDataManager.loadMetadataFiles(MetaDataManager.java:441)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:878)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:327)
+03:07:12,950 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+03:07:13,159 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+03:07:13,385 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+03:07:13,411 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+03:07:13,413 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+03:07:13,418 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+03:07:13,419 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=198 ms, enhance=58 ms, total=256 ms. Consult the log for full details
+03:07:22,428 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema
+03:07:22,429 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\asm-3.3.jar
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-dbcp-1.3.jar
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-pool-1.5.5.jar
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\log4j-1.2.14.jar
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\jdo-api-3.0.1.jar
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\mysql-connector-java-5.1.18-bin.jar
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jdo-3.0.5.jar
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jpa-3.0.6.jar
+03:07:22,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-enhancer-3.0.1.jar
+03:07:22,431 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-rdbms-3.0.6.jar
+03:07:22,431 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-core-3.0.6.jar
+03:07:23,063 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+03:07:23,063 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\BalanceSheet.class
+03:07:23,063 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class
+03:07:23,063 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PMF.class
+03:07:23,064 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class
+03:07:23,064 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\package.jdo
+03:07:23,064 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\test\JdoFKTest.class
+03:07:23,064 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\src\in\co\blackphoenix\shexp\jdo\package.jdo
+03:07:23,449 (main) INFO  [DataNucleus.SchemaTool] - SchemaTool completed successfully
+03:07:55,529 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema
+03:07:55,530 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03:07:55,530 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin
+03:07:55,530 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\asm-3.3.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-dbcp-1.3.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-pool-1.5.5.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\log4j-1.2.14.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\jdo-api-3.0.1.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\mysql-connector-java-5.1.18-bin.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jdo-3.0.5.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jpa-3.0.6.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-enhancer-3.0.1.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-rdbms-3.0.6.jar
+03:07:55,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-core-3.0.6.jar
+03:07:56,220 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+03:07:56,220 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\BalanceSheet.class
+03:07:56,220 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class
+03:07:56,220 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PMF.class
+03:07:56,220 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class
+03:07:56,220 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\package.jdo
+03:07:56,220 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\test\JdoFKTest.class
+03:07:56,220 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\src\in\co\blackphoenix\shexp\jdo\package.jdo
+03:07:56,505 (main) INFO  [DataNucleus.SchemaTool] - SchemaTool completed successfully
+03:08:21,205 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema
+03:08:21,206 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\asm-3.3.jar
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-dbcp-1.3.jar
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-pool-1.5.5.jar
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\log4j-1.2.14.jar
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\jdo-api-3.0.1.jar
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\mysql-connector-java-5.1.18-bin.jar
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jdo-3.0.5.jar
+03:08:21,207 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jpa-3.0.6.jar
+03:08:21,208 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-enhancer-3.0.1.jar
+03:08:21,208 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-rdbms-3.0.6.jar
+03:08:21,208 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-core-3.0.6.jar
+03:08:21,830 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+03:08:21,830 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\BalanceSheet.class
+03:08:21,830 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class
+03:08:21,830 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PMF.class
+03:08:21,830 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class
+03:08:21,830 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\package.jdo
+03:08:21,830 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\test\JdoFKTest.class
+03:08:21,830 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\src\in\co\blackphoenix\shexp\jdo\package.jdo
+03:08:22,114 (main) INFO  [DataNucleus.SchemaTool] - SchemaTool completed successfully
+03:08:37,013 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+03:08:37,218 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+03:08:37,449 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+03:08:37,450 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+03:08:37,452 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+03:08:37,454 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+03:08:37,454 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=201 ms, enhance=31 ms, total=232 ms. Consult the log for full details
+03:08:44,059 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema
+03:08:44,060 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03:08:44,060 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\asm-3.3.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-dbcp-1.3.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\commons-pool-1.5.5.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusDeps\log4j-1.2.14.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\jdo-api-3.0.1.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\mysql-connector-java-5.1.18-bin.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jdo-3.0.5.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-api-jpa-3.0.6.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-enhancer-3.0.1.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-rdbms-3.0.6.jar
+03:08:44,061 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\sharedexpensesserver\lib\DataNucleusLib\datanucleus-core-3.0.6.jar
+03:08:44,732 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+03:08:44,732 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\BalanceSheet.class
+03:08:44,732 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class
+03:08:44,732 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PMF.class
+03:08:44,732 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class
+03:08:44,732 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\package.jdo
+03:08:44,733 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\test\JdoFKTest.class
+03:08:44,733 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\src\in\co\blackphoenix\shexp\jdo\package.jdo
+03:08:45,020 (main) INFO  [DataNucleus.SchemaTool] - SchemaTool completed successfully
+19:07:09,206 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+19:07:09,479 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+19:07:09,725 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+19:07:09,752 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+19:07:09,754 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+19:07:09,755 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+19:07:09,756 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=217 ms, enhance=56 ms, total=273 ms. Consult the log for full details
+21:42:15,197 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+21:42:15,404 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+21:42:15,628 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+21:42:15,654 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+21:42:15,656 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+21:42:15,658 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+21:42:15,658 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=195 ms, enhance=56 ms, total=251 ms. Consult the log for full details
+22:02:44,532 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:02:44,747 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+22:02:44,971 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+22:02:44,973 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.Bill" is already enhanced.
+22:02:44,974 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+22:02:44,976 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+22:02:44,976 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=194 ms, enhance=31 ms, total=225 ms. Consult the log for full details

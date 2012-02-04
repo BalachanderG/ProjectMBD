@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="build" name="Build json networking library">
+	<path id="json.network.classpath">
+        <pathelement location="lib/*.jar"/>
+    </path>
+	<target name="build">
+		<javac debug="false" destdir="bin">
+			<src path="src"/>
+			<classpath refid="json.network.classpath"/>
+		</javac>
+	</target>
+    <target name="jar" depends="build">
+        <mkdir dir="build"/>
+		<delete file="build/jsonNetworking.jar" />
+        <jar destfile="build/jsonNetworking.jar">
+            <fileset dir="bin"/>
+        </jar>
+    </target>
+	<target name="clean">
+		<delete dir="build" />
+		<delete dir="bin" />
+	</target>
+</project>
