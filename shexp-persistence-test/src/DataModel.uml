@@ -150,7 +150,7 @@
     </ownedComment>
     <packagedElement xmi:type="uml:Model" xmi:id="_rhdQIE8QEeGVMo6JxLfZxA" name="Messages Model">
       <packagedElement xmi:type="uml:Class" xmi:id="_ZramME8REeGVMo6JxLfZxA" name="AuthorizedRequest" isAbstract="true">
-        <generalization xmi:id="_cXa5cE8REeGVMo6JxLfZxA"/>
+        <generalization xmi:id="_cXa5cE8REeGVMo6JxLfZxA" general="_jEvtEE8REeGVMo6JxLfZxA"/>
         <ownedAttribute xmi:id="_bwnisE8SEeGVMo6JxLfZxA" name="AuthToken" type="_hG2nkE8SEeGVMo6JxLfZxA"/>
         <ownedAttribute xmi:id="_uxXPwE8SEeGVMo6JxLfZxA" name="C2DM_AuthToken" type="_hG2nkE8SEeGVMo6JxLfZxA"/>
       </packagedElement>

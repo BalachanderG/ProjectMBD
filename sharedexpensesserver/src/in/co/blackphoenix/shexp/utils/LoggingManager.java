@@ -27,9 +27,12 @@ public class LoggingManager {
 				SimpleFormatter formatter = new SimpleFormatter();
 				fh.setFormatter(formatter);
 			
-			} catch (SecurityException | IOException e) {
+			} catch (SecurityException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			}catch (IOException ie) {
+				// TODO Auto-generated catch block
+				ie.printStackTrace();
 			}
 		}
 		
