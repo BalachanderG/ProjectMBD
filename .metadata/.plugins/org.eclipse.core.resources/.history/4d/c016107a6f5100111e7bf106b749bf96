@@ -1,0 +1,51 @@
+package in.co.blackphoenix.shexp.test;
+
+import in.co.blackphoenix.shexp.messaging.data.Bill;
+import in.co.blackphoenix.shexp.messaging.requests.StoreBillsRequest;
+import in.co.blackphoenix.shexp.messaging.responses.ErrorResponse;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import com.grl.json.client.Client;
+import com.grl.json.messages.PingRequest;
+import com.grl.json.messages.Response;
+
+public class BillReportTestClient {
+	
+	public static int FBAUTH = 10011001;
+	public static int C2DMAUTH = 11001100;
+
+	public static void main(String args[]){
+		
+		Client shexpClient = null;
+		try {
+			
+			shexpClient = new Client(new URL("http://localhost:8080/sharedexpensesserver/serveme/"));
+			
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+
+
+		//generate a bill
+		Bill testBill = BillGenerator.generateABill(10, 1000, 5);
+		
+		// Request the server to store the bill
+		StoreBillsRequest reportBills = new StoreBillsRequest(FBAUTH, C2DMAUTH, testBill);
+		
+		//send the Request to the server
+		Response billreported = shexpClient.sendRequest(reportBills);
+		
+//		Response testResponse = shexpClient.sendRequest(new PingRequest(10));
+		if(ErrorResponse.class.isInstance(testResponse)){
+			
+			System.out.println("Error occured while adding the bill");
+		}else{
+			
+			System.out.println("Success");
+		}
+		
+	}
+}

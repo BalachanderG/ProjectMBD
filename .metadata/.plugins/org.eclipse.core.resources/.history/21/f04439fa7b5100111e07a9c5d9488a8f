@@ -1,0 +1,66 @@
+package in.co.blackphoenix.shexp.messaging.data;
+
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+
+import org.codehaus.jackson.annotate.JsonTypeInfo;
+
+/**
+ * 
+ * Details of the participant in the bill
+ * @author Manoj
+ *
+ */
+
+@JsonTypeInfo(use=JsonTypeInfo.Id.CLASS, include=JsonTypeInfo.As.PROPERTY, property="@class")
+@PersistenceCapable
+public abstract class Participant {
+
+	@Persistent
+	private int myFBId; // FB ID of the participant
+	
+	@Persistent
+	private double myShareOfBill; // Amount of the bill
+
+	/**
+	 * 
+	 * fill in the details about a participant of a bill
+	 * @param myFBId - his fb ID 
+	 * @param myShareOfBill - his share of the bill 
+	 */
+	public Participant(int myFBId, double myShareOfBill) {
+		
+		this.myFBId = myFBId;
+		this.myShareOfBill = myShareOfBill;
+	}
+
+	/**
+	 * @return the myFBId
+	 */
+	public int getMyFBId() {
+		return myFBId;
+	}
+
+	/**
+	 * @param myFBId the myFBId to set
+	 */
+	public void setMyFBId(int myFBId) {
+		this.myFBId = myFBId;
+	}
+
+	/**
+	 * @return the myShareOfBill
+	 */
+	public double getMyShareOfBill() {
+		return myShareOfBill;
+	}
+
+	/**
+	 * @param myShareOfBill the myShareOfBill to set
+	 */
+	public void setMyShareOfBill(double myShareOfBill) {
+		this.myShareOfBill = myShareOfBill;
+	}
+	
+	public Participant(){}
+}

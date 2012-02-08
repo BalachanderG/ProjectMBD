@@ -1,0 +1,15 @@
+package in.co.blackphoenix.shexp.messaging.data;
+
+/** 
+ * Participant with a slice of the pie to be shared in the bill
+ * 
+ * @author Manoj
+ *
+ */
+public class PieSliceParticipant extends Participant {
+
+	
+	private double totalBillAmount; // Total amount of the bill
+	
+	private double mySliceOfPie; // Slice of the pie that goes to the participant
+}

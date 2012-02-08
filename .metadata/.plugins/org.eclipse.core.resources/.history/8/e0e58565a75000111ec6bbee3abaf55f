@@ -1,0 +1,141 @@
+package in.co.blackphoenix.shexp.messaging.data;
+
+import java.sql.Date;
+import java.util.List;
+
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+
+/**
+ * Details of the bill 
+ * @author Manoj
+ *
+ */
+
+@PersistenceCapable(table = "ReportedBills")
+public class Bill {
+
+	@Persistent
+	private int paidById; // person who paid the bill
+	
+	@Persistent
+	private String paidFor; // Why did the bill pay it
+	
+	@Persistent
+	private String description; // description of the event 
+	
+	@Persistent
+	private Date timestamp; // Time when the event occurred
+	
+	@Persistent
+	private double amount; // Amount paid for the bill
+	
+	@Element(column = "bill_id")
+	private List<Participant> shareHolders; // participants of the bill
+	
+	/**
+	 * Details of the bill 
+	 * @param paidById - person who paid the bill
+	 * @param paidFor - event name for the bill
+	 * @param description - description of the bill event
+	 * @param timestamp - time when the event happened
+	 * @param amount - amount paid for the bill 
+	 * @param shareHolders - participants of the bill
+	 */
+	public Bill(int paidById, String paidFor, String description,
+			Date timestamp, double amount, List<Participant> shareHolders) {
+		super();
+		this.paidById = paidById;
+		this.paidFor = paidFor;
+		this.description = description;
+		this.timestamp = timestamp;
+		this.amount = amount;
+		this.shareHolders = shareHolders;
+	}
+
+	/**
+	 * @return the paidById
+	 */
+	public int getPaidById() {
+		return paidById;
+	}
+
+	/**
+	 * @param paidById the paidById to set
+	 */
+	public void setPaidById(int paidById) {
+		this.paidById = paidById;
+	}
+
+	/**
+	 * @return the paidFor
+	 */
+	public String getPaidFor() {
+		return paidFor;
+	}
+
+	/**
+	 * @param paidFor the paidFor to set
+	 */
+	public void setPaidFor(String paidFor) {
+		this.paidFor = paidFor;
+	}
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * @param description the description to set
+	 */
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	/**
+	 * @return the timestamp
+	 */
+	public Date getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * @param timestamp the timestamp to set
+	 */
+	public void setTimestamp(Date timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	/**
+	 * @return the amount
+	 */
+	public double getAmount() {
+		return amount;
+	}
+
+	/**
+	 * @param amount the amount to set
+	 */
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+	/**
+	 * @return the shareHolders
+	 */
+	public List<Participant> getShareHolders() {
+		return shareHolders;
+	}
+
+	/**
+	 * @param shareHolders the shareHolders to set
+	 */
+	public void setShareHolders(List<Participant> shareHolders) {
+		this.shareHolders = shareHolders;
+	}
+	
+	
+}

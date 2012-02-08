@@ -1,0 +1,175 @@
+package in.co.blackphoenix.shexp.test;
+
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import in.co.blackphoenix.shexp.messaging.data.Bills;
+import in.co.blackphoenix.shexp.messaging.data.FixedShareParticipant;
+import in.co.blackphoenix.shexp.messaging.data.Participant;
+import in.co.blackphoenix.shexp.messaging.data.PieSliceParticipant;
+
+public class BillGenerator {
+
+	public static String[] paidFors = {"BucaDeBeppo", "BabyDolls", "HardRock"};
+	public static String[] paidDescriptions = {"ItalianRestaurant", "Gujalti", "Thanni"};
+	public static int MAX_FB_ID = 99999999;
+	
+	public static Bills generateABill(int numberOfParticipants, double amount, int numberOfFixedShares){
+		
+		if(amount == 0 || numberOfParticipants < numberOfFixedShares) return null;
+		
+		// Creating the participants
+		List<Participant> shareHolders = new ArrayList<Participant>();
+		
+		if(numberOfParticipants > (numberOfFixedShares + 1)){
+			
+			if(numberOfFixedShares == 0){
+				
+				//adding all the pie slice share holders to the list
+				shareHolders.addAll(generatePieSliceParticipants(amount, 1.0, numberOfParticipants));
+			}else{
+				
+				int numberOfPieSlices = numberOfParticipants - numberOfFixedShares;
+
+				Random splitGen = new Random();
+				double fixedSplit = splitGen.nextDouble();
+				double pieSplit = 1.0 - fixedSplit;
+				// adding the fixed share holders to the list
+				shareHolders.addAll(generateFixedShareParticipants(fixedSplit * amount, numberOfFixedShares));
+				
+				// adding the pie slice share holders to the list
+				shareHolders.addAll(generatePieSliceParticipants(pieSplit * amount, pieSplit, numberOfPieSlices));
+			}
+			
+		}else{
+			
+			// adding the fixed share holders to the list
+			shareHolders.addAll(generateFixedShareParticipants(amount, numberOfFixedShares));
+		}
+		
+		// generating the FB ID of the payee
+		Random fbIDGen = new Random();
+		
+		int paidBy = fbIDGen.nextInt(MAX_FB_ID);
+		
+		int paidFor = fbIDGen.nextInt(3);
+		
+		int paidDesc = fbIDGen.nextInt(3);
+		
+		// Creating the bill 
+		
+		Bills testBill = new Bills(paidBy, paidFors[paidFor], paidDescriptions[paidDesc], new Date(System.currentTimeMillis()), amount, shareHolders);
+		
+		return testBill;
+		
+	}
+	
+	public static List<Participant> generateFixedShareParticipants(double amount, int numberOfParticipants){
+		
+		List<Double> shares = new ArrayList<Double>();
+		
+		double initialShare = 1.0;
+		double currShare;
+		
+		Random shareGen = new Random();
+		
+		//Generate fixed shares for each of the participant
+		for(int shareNum = 0; shareNum < numberOfParticipants - 1; shareNum++){
+			
+			currShare = shareGen.nextDouble() * initialShare;
+			
+			shares.add(new Double(currShare * amount));
+			
+			initialShare -= currShare;
+		}
+		
+		shares.add(new Double(initialShare * amount));
+		
+		List<Participant> participants = new ArrayList<Participant>();
+		
+		// Create participants and add to the list
+		for(Double share : shares){
+			
+			Participant newParticipant = getAFixedShareParticipant(share.doubleValue());
+			
+			participants.add(newParticipant);
+		}
+		
+		return participants;
+	}
+	
+	
+	public static List<Participant> generatePieSliceParticipants(double amount, double shareToSplit, int numberOfParticipants){
+
+		List<Double> shares = new ArrayList<Double>();
+
+		double initialShare = shareToSplit;
+		double currShare;
+
+		Random shareGen = new Random();
+
+		//Generate pie slices shares for each of the participant
+		for(int shareNum = 0; shareNum < numberOfParticipants - 1; shareNum++){
+
+			currShare = shareGen.nextDouble() * initialShare;
+
+			shares.add(new Double(currShare));
+
+			initialShare -= currShare;
+		}
+
+		shares.add(new Double(initialShare));
+
+		List<Participant> participants = new ArrayList<Participant>();
+
+		// Create participants and add to the list
+		for(Double share : shares){
+
+			Participant newParticipant = getAPieSliceParticipant(share.doubleValue(), amount);
+
+			participants.add(newParticipant);
+		}
+
+		return participants;
+	}
+	
+	/**
+	 * Create one fixed share participant of a bill
+	 * @param share
+	 * @return
+	 */
+	public static Participant getAFixedShareParticipant(double share){
+
+		Random generateRandomNum = new Random();
+
+		//generating participant ID
+		int fb_id = generateRandomNum.nextInt(MAX_FB_ID);
+
+		// Creating the fixed share participant
+		Participant participant = new Participant(fb_id, share);
+
+		return participant;
+	}
+
+	/**
+	 * Create one 
+	 * @param share
+	 * @param amount
+	 * @return
+	 */
+	public static Participant getAPieSliceParticipant(double share, double amount){
+		
+		Random generateRandomNum = new Random();
+		
+		//generating participant ID
+		int fb_id = generateRandomNum.nextInt(MAX_FB_ID);
+		
+		//creating the participant
+		Participant participant = new Participant(fb_id, share * amount, amount, share * 100 );
+		
+		return participant;		
+		
+	}
+}

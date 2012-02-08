@@ -1,0 +1,35 @@
+package in.co.blackphoenix.shexp.messaging.responses;
+
+import in.co.blackphoenix.shexp.messaging.data.BalanceSheet;
+
+import com.grl.json.messages.Response;
+
+public class BalanceSheetResponse extends Response  {
+
+	private BalanceSheet ledger; // ledger that contains the balances with each person
+	
+	/**
+	 * Construct a balance sheet 
+	 * 
+	 * @param ledger - the balance sheet
+	 */
+	public BalanceSheetResponse(BalanceSheet ledger) {
+		super();
+		this.ledger = ledger;
+	}
+
+	/**
+	 * @return the ledger
+	 */
+	public BalanceSheet getLedger() {
+		return ledger;
+	}
+
+	/**
+	 * @param ledger the ledger to set
+	 */
+	public void setLedger(BalanceSheet ledger) {
+		this.ledger = ledger;
+	}
+	
+}

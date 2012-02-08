@@ -3,12 +3,7 @@
  */
 package in.co.blackphoenix.shexp.jdo;
 
-import javax.jdo.annotations.DatastoreIdentity;
-import javax.jdo.annotations.Element;
-import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
-import javax.jdo.annotations.PrimaryKey;
 
 /**
  * @author Manoj

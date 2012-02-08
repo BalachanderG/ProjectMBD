@@ -13,6 +13,9 @@
                   name="id"
                   persistence-modifier="persistent"/>
             <field
+                  name="paidBy"
+                  persistence-modifier="persistent"/>
+            <field
                   name="description"
                   persistence-modifier="persistent"/>
             <field

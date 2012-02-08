@@ -1,0 +1,8 @@
+  <servlet>
+   <servlet-name>ShExp Server</servlet-name>
+   <servlet-class>in.co.blackphoenix.shexp.server.ServeMe</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShExp Server</servlet-name>
+    <url-pattern>/serveme/*</url-pattern>
+ </servlet-mapping>

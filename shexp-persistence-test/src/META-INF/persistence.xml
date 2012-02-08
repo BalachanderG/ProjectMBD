@@ -4,6 +4,6 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
 
     <persistence-unit name="TEST">
-        <mapping-file>C:\Users\Manoj\Desktop\Projects\myJavaProjects\shexp-persistence-test\src\in\co\blackphoenix\shexp\jdo\package.jdo</mapping-file>
+        <mapping-file>C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\shexp-persistence-test\src\in\co\blackphoenix\shexp\jdo\package.jdo</mapping-file>
     </persistence-unit>
 </persistence>

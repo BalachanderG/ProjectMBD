@@ -1,0 +1,54 @@
+package in.co.blackphoenix.shexp.messaging.requests;
+
+import com.grl.json.messages.Request;
+
+public abstract class AuthorizedRequest extends Request{
+	
+	private long fbAuthToken; // Authorization token for FB
+	
+	private long C2DMToken; // Authorization token for Cloud to Device Messaging Token
+	
+	/**
+	 * Construct a request message with 
+	 * @param fbAuthToken - token for fb auth
+	 * @param c2dmToken - token for cloud to Device Msg
+	 */
+	public AuthorizedRequest(long fbAuthToken, long c2dmToken) {
+		
+		this.fbAuthToken = fbAuthToken;
+		C2DMToken = c2dmToken;
+	}
+
+	public AuthorizedRequest(){}
+	/**
+	 * @return the fbAuthToken
+	 */
+	public long getFbAuthToken() {
+		return fbAuthToken;
+	}
+
+	/**
+	 * @param fbAuthToken the fbAuthToken to set
+	 */
+	public void setFbAuthToken(long fbAuthToken) {
+		this.fbAuthToken = fbAuthToken;
+	}
+
+	/**
+	 * @return the c2DMToken
+	 */
+	public long getC2DMToken() {
+		return C2DMToken;
+	}
+
+	/**
+	 * @param c2dmToken the c2DMToken to set
+	 */
+	public void setC2DMToken(long c2dmToken) {
+		C2DMToken = c2dmToken;
+	}
+	
+	
+	
+
+}

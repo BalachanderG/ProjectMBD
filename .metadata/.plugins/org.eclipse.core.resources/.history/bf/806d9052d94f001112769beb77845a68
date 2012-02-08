@@ -1,0 +1,20 @@
+package in.co.blackphoenix.shexp.messaging.data;
+
+public class RangeFilter extends HistoryFilter {
+
+	private String columnName;
+	
+	private double min;
+	private double max;
+	
+	/**
+	 * function to convert the details into condition in the SQL format
+	 * @return - null since there is no condition
+	 */
+	public String toSqlCondition(){
+		
+		return columnName + " < " + max + " AND "
+		+ columnName + " > " + + min;
+	}
+	
+}

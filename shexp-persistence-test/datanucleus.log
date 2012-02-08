@@ -349,3 +349,17 @@ org.datanucleus.metadata.InvalidMetaDataException: Class in.co.blackphoenix.shex
 22:02:44,974 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
 22:02:44,976 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
 22:02:44,976 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=194 ms, enhance=31 ms, total=225 ms. Consult the log for full details
+19:28:15,665 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+19:28:15,887 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+19:28:16,341 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PMF.class" with enhanced definition
+19:28:16,350 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+19:28:16,354 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\BalanceSheet.class" with enhanced definition
+19:28:16,360 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\PerUserTransaction.class" with enhanced definition
+19:28:16,370 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=320 ms, enhance=149 ms, total=469 ms. Consult the log for full details
+19:31:58,781 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+19:31:58,993 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.0.1) : Enhancement of classes
+19:31:59,230 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PMF" is already enhanced.
+19:31:59,255 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\Users\Manoj\Desktop\Projects\myJavaProjects\ProjectMBD\shexp-persistence-test\bin\in\co\blackphoenix\shexp\jdo\Bill.class" with enhanced definition
+19:31:59,257 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.BalanceSheet" is already enhanced.
+19:31:59,258 (main) INFO  [DataNucleus.Enhancer] - Class "in.co.blackphoenix.shexp.jdo.PerUserTransaction" is already enhanced.
+19:31:59,259 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=207 ms, enhance=54 ms, total=261 ms. Consult the log for full details

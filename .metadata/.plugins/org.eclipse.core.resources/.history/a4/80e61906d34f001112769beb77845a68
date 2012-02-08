@@ -1,0 +1,5 @@
+package in.co.blackphoenix.shexp.messaging.data;
+
+public class Payables extends LedgerEntry {
+
+}

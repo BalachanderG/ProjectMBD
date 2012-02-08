@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ModelNavigator">
+		<item value="1" key="ModelViewer.STORE_SORT_TYPE"/>
+		<item value="false" key="ModelNavigator.LinkEnabled"/>
+	</section>
+</section>

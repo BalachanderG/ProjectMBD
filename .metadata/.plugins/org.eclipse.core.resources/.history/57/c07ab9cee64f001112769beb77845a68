@@ -1,0 +1,5 @@
+package in.co.blackphoenix.shexp.messaging.responses;
+
+public class GeneralACKResponse {
+
+}

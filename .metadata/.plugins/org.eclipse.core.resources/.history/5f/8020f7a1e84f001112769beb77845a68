@@ -1,0 +1,10 @@
+package in.co.blackphoenix.shexp.messaging.responses;
+
+import java.util.List;
+import java.util.ArrayList;
+import com.grl.json.messages.Response;
+
+public class HistoryResponse extends Response {
+
+	private List<Bills> reportedBills; 
+} 

@@ -6,8 +6,6 @@ package in.co.blackphoenix.shexp.jdo;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.jdo.annotations.Column;
-import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.Element;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
@@ -25,6 +23,8 @@ public class Bill {
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 	@PrimaryKey
 	long id = 0;
+	
+	String paidBy = "Manoj";
 	@Persistent
 	public int description = 0;
 	@Persistent
@@ -109,12 +109,27 @@ public class Bill {
 	}
 
 	/**
+	 * @return the paidBy
+	 */
+	public String getPaidBy() {
+		return paidBy;
+	}
+
+	/**
+	 * @param paidBy the paidBy to set
+	 */
+	public void setPaidBy(String paidBy) {
+		this.paidBy = paidBy;
+	}
+
+	/**
 	 * @param description
 	 * @param amount
 	 * @param numberOfParticipants
 	 */
-	public Bill(int description, int amount, int numberOfParticipants) {
+	public Bill(String paidBy, int description, int amount, int numberOfParticipants) {
 		super();
+		this.paidBy = paidBy;
 		this.description = description;
 		this.amount = amount;
 		this.numberOfParticipants = numberOfParticipants;

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_cXIqwU7_EeGVMo6JxLfZxA" name="in.co.blackphoenix.shexp.data">
+  <packagedElement xmi:type="uml:Model" xmi:id="_8a6wUE7_EeGVMo6JxLfZxA" name="Data Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZLxskE8AEeGVMo6JxLfZxA" name="LedgerEntry" isAbstract="true">
+      <ownedAttribute xmi:id="_u1m7wE8AEeGVMo6JxLfZxA" name="amount" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8QGyAE8AEeGVMo6JxLfZxA" name="Date"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-0bv8E8AEeGVMo6JxLfZxA" name="int"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_JiZugE8BEeGVMo6JxLfZxA" name="double"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tUKhsE8BEeGVMo6JxLfZxA" name="Receivables">
+      <ownedComment xmi:id="_nKIrkE8FEeGVMo6JxLfZxA">
+        <body>Class that holds the details of the person i have to get the money from.</body>
+      </ownedComment>
+      <generalization xmi:id="_KhW0oE8CEeGVMo6JxLfZxA" general="_ZLxskE8AEeGVMo6JxLfZxA"/>
+      <ownedAttribute xmi:id="_xN064E8BEeGVMo6JxLfZxA" name="receiveFrom" type="_-0bv8E8AEeGVMo6JxLfZxA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4HStEE8BEeGVMo6JxLfZxA" name="String"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2ILqIE8DEeGVMo6JxLfZxA" name="Payables">
+      <ownedComment xmi:id="_jDWcYE8FEeGVMo6JxLfZxA">
+        <body>Class to hold the details of the person i have to pay&#xD;
+</body>
+      </ownedComment>
+      <generalization xmi:id="_BVw84E8EEeGVMo6JxLfZxA" general="_ZLxskE8AEeGVMo6JxLfZxA"/>
+      <ownedAttribute xmi:id="_HUaFkE8EEeGVMo6JxLfZxA" name="payTo" type="_-0bv8E8AEeGVMo6JxLfZxA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SBUUME8EEeGVMo6JxLfZxA" name="BalanceSheet">
+      <ownedComment xmi:id="_dkYSQE8FEeGVMo6JxLfZxA">
+        <body>Class To Hold a list of payables and receivables details. </body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_5QozYE8EEeGVMo6JxLfZxA" name="IOweYouList" type="_2ILqIE8DEeGVMo6JxLfZxA"/>
+      <ownedAttribute xmi:id="_B4bIkE8FEeGVMo6JxLfZxA" name="YouOweMeList" type="_tUKhsE8BEeGVMo6JxLfZxA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wGwoUE8FEeGVMo6JxLfZxA" name="BalanceSheetPayables" memberEnd="_8FV6ME8FEeGVMo6JxLfZxA">
+      <ownedComment xmi:id="_zuQ6gE8FEeGVMo6JxLfZxA">
+        <body>One To Many Association between the BalanceSheet and Payables&#xD;
+</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_8FV6ME8FEeGVMo6JxLfZxA" name="" type="_SBUUME8EEeGVMo6JxLfZxA" aggregation="composite" association="_wGwoUE8FEeGVMo6JxLfZxA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l7YHgE8HEeGVMo6JxLfZxA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ik9lUE8HEeGVMo6JxLfZxA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Package>

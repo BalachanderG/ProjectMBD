@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.data.Receivables"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.data.HistoryFilter"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.data.BalanceSheet"/>
+<fullyQualifiedTypeName name="com.grl.json.client.Client"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.data.FixedShareParticipant"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.data.PieSliceParticipant"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.data.Bill"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.requests.StoreBillsRequest"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.test.BillGenerator"/>
+<fullyQualifiedTypeName name="com.grl.json.messages.Response"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.responses.ErrorResponse"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.responses.GeneralACKResponse"/>
+<fullyQualifiedTypeName name="com.grl.json.messages.Request"/>
+<fullyQualifiedTypeName name="com.grl.json.messages.PingRequest"/>
+<fullyQualifiedTypeName name="javax.jdo.annotations.PersistenceCapable"/>
+<fullyQualifiedTypeName name="javax.jdo.annotations.Discriminator"/>
+<fullyQualifiedTypeName name="javax.jdo.annotations.DiscriminatorStrategy"/>
+<fullyQualifiedTypeName name="javax.jdo.annotations.InheritanceStrategy"/>
+<fullyQualifiedTypeName name="in.co.blackphoenix.shexp.messaging.data.Participant.SHARETYPE"/>
+</qualifiedTypeNameHistroy>

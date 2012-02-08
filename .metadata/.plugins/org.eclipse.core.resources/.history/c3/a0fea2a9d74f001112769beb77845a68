@@ -1,0 +1,18 @@
+package in.co.blackphoenix.shexp.messaging.data;
+
+/**
+ * HistoryFilter
+ * 
+ * Filter with no conditions
+ * @author Manoj
+ *
+ */
+public class HistoryFilter {
+
+	public HistoryFilter(){}
+	
+	public String toSql(){
+		
+		return null;
+	}
+}

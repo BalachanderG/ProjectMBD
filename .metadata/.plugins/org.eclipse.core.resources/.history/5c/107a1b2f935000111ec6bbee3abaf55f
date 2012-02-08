@@ -1,0 +1,7 @@
+package in.co.blackphoenix.shexp.server;
+
+import com.grl.json.server.JsonRequestServlet;
+
+public class ServeMe extends JsonRequestServlet {
+
+}

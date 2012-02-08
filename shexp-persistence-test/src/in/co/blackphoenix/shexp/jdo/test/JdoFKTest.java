@@ -27,13 +27,13 @@ public class JdoFKTest {
 		try{
 			tx.begin();
 			{
-				Bill myFirstBill = new Bill(10 ,100, 10);
+				Bill myFirstBill = new Bill("Aichu", 10 ,100, 10);
 				
 				
-				PerUserTransaction participant1 = new PerUserTransaction("Manoj", 2);
-				PerUserTransaction participant2 = new PerUserTransaction("Sappa", 3);
-				PerUserTransaction participant3 = new PerUserTransaction("Kaana", 3);
-				PerUserTransaction participant4 = new PerUserTransaction("Aichu", 2);
+				PerUserTransaction participant1 = new PerUserTransaction("Manoj", 10);
+				PerUserTransaction participant2 = new PerUserTransaction("Sappa", 20);
+				PerUserTransaction participant3 = new PerUserTransaction("Kaana", 30);
+				PerUserTransaction participant4 = new PerUserTransaction("Aichu", 40);
 				
 				myFirstBill.getMyParticipants().add(participant1);
 				myFirstBill.getMyParticipants().add(participant2);

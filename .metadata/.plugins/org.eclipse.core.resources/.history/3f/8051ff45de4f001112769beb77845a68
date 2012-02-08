@@ -1,0 +1,14 @@
+package in.co.blackphoenix.shexp.messaging.data;
+
+/**
+ * 
+ * Details of the participant in the bill
+ * @author Manoj
+ *
+ */
+public abstract class Participant {
+
+	private int myFBId; // FB ID of the participant
+	
+	private double myShareOfBill; // Amount of the bill
+}

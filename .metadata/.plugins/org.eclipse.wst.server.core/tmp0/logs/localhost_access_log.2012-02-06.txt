@@ -1,0 +1,4 @@
+127.0.0.1 - - [06/Feb/2012:23:27:03 -0600] "GET / HTTP/1.1" 404 953
+0:0:0:0:0:0:0:1 - - [06/Feb/2012:23:27:03 -0600] "GET /sharedexpensesserver/servlet/in.co.blackphoenix.shexp.server.ServeMe HTTP/1.1" 404 1157
+127.0.0.1 - - [06/Feb/2012:23:36:45 -0600] "GET / HTTP/1.1" 404 953
+0:0:0:0:0:0:0:1 - - [06/Feb/2012:23:36:46 -0600] "GET /sharedexpensesserver/servlet/in.co.blackphoenix.shexp.server.ServeMe HTTP/1.1" 404 1157

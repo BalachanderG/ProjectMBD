@@ -1,0 +1,12 @@
+package in.co.blackphoenix.shexp.messaging.responses;
+
+import com.grl.json.messages.Response;
+
+public class ErrorResponse extends Response{
+
+	private int errNo;
+	private String errMessage;
+	
+	
+	
+}

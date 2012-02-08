@@ -1,0 +1,7 @@
+package in.co.blackphoenix.shexp.messaging.responses;
+
+import Response;
+
+public class BalanceSheetResponse extends Response {
+
+}

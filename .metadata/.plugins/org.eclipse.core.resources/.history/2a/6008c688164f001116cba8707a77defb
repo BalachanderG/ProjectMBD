@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_cXIqwU7_EeGVMo6JxLfZxA" name="in.co.blackphoenix.shexp">
+  <packagedElement xmi:type="uml:Package" xmi:id="_kTGzEE8QEeGVMo6JxLfZxA" name="data">
+    <ownedComment xmi:id="_PEZTQE8IEeGVMo6JxLfZxA">
+      <body>Beginning of Ledger Entry Data Model objects&#xD;
+</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Model" xmi:id="_8a6wUE7_EeGVMo6JxLfZxA" name="Data Model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZLxskE8AEeGVMo6JxLfZxA" name="LedgerEntry" isAbstract="true">
+        <ownedAttribute xmi:id="_u1m7wE8AEeGVMo6JxLfZxA" name="amount" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8QGyAE8AEeGVMo6JxLfZxA" name="Date"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-0bv8E8AEeGVMo6JxLfZxA" name="int"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_JiZugE8BEeGVMo6JxLfZxA" name="double"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tUKhsE8BEeGVMo6JxLfZxA" name="Receivables">
+        <ownedComment xmi:id="_nKIrkE8FEeGVMo6JxLfZxA">
+          <body>Class that holds the details of the person i have to get the money from.</body>
+        </ownedComment>
+        <generalization xmi:id="_KhW0oE8CEeGVMo6JxLfZxA" general="_ZLxskE8AEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_xN064E8BEeGVMo6JxLfZxA" name="receiveFrom" type="_-0bv8E8AEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4HStEE8BEeGVMo6JxLfZxA" name="String"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2ILqIE8DEeGVMo6JxLfZxA" name="Payables">
+        <ownedComment xmi:id="_jDWcYE8FEeGVMo6JxLfZxA">
+          <body>Class to hold the details of the person i have to pay&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:id="_BVw84E8EEeGVMo6JxLfZxA" general="_ZLxskE8AEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_HUaFkE8EEeGVMo6JxLfZxA" name="payTo" type="_-0bv8E8AEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SBUUME8EEeGVMo6JxLfZxA" name="BalanceSheet">
+        <ownedComment xmi:id="_dkYSQE8FEeGVMo6JxLfZxA">
+          <body>Class To Hold a list of payables and receivables details. </body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_5QozYE8EEeGVMo6JxLfZxA" name="IOweYouList" type="_2ILqIE8DEeGVMo6JxLfZxA" aggregation="composite" association="_wGwoUE8FEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wmC6cE8HEeGVMo6JxLfZxA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xESVoE8HEeGVMo6JxLfZxA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_B4bIkE8FEeGVMo6JxLfZxA" name="YouOweMeList" type="_tUKhsE8BEeGVMo6JxLfZxA" aggregation="composite" association="_72qTEE8HEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KcRRkE8IEeGVMo6JxLfZxA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQITAE8IEeGVMo6JxLfZxA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_wGwoUE8FEeGVMo6JxLfZxA" name="BalanceSheetPayables" memberEnd="_8FV6ME8FEeGVMo6JxLfZxA _5QozYE8EEeGVMo6JxLfZxA">
+        <ownedComment xmi:id="_zuQ6gE8FEeGVMo6JxLfZxA">
+          <body>One To Many Association between the BalanceSheet and Payables&#xD;
+</body>
+        </ownedComment>
+        <ownedEnd xmi:id="_8FV6ME8FEeGVMo6JxLfZxA" name="" type="_SBUUME8EEeGVMo6JxLfZxA" aggregation="composite" association="_wGwoUE8FEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l7YHgE8HEeGVMo6JxLfZxA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ik9lUE8HEeGVMo6JxLfZxA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_72qTEE8HEeGVMo6JxLfZxA" name="BalanceSheetReceivealbes" memberEnd="_72qTEk8HEeGVMo6JxLfZxA _B4bIkE8FEeGVMo6JxLfZxA">
+        <ownedComment xmi:id="_72qTEU8HEeGVMo6JxLfZxA">
+          <body>One To Many Association between the BalanceSheet and Receivables&#xD;
+&#xD;
+</body>
+        </ownedComment>
+        <ownedEnd xmi:id="_72qTEk8HEeGVMo6JxLfZxA" name="" type="_SBUUME8EEeGVMo6JxLfZxA" aggregation="composite" association="_72qTEE8HEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_72qTE08HEeGVMo6JxLfZxA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_72qTFE8HEeGVMo6JxLfZxA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DXmfgE8JEeGVMo6JxLfZxA" name="HistoryFilter" isAbstract="true">
+        <ownedComment xmi:id="_ZC2D8E8JEeGVMo6JxLfZxA">
+          <body>General Filter Class. Stores the conditions for filter.</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:FunctionBehavior" xmi:id="_SvB8gE8JEeGVMo6JxLfZxA" name="toSQL"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eA9jwE8JEeGVMo6JxLfZxA" name="RangeFilter">
+        <generalization xmi:id="_jnsiwE8JEeGVMo6JxLfZxA" general="_DXmfgE8JEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_tglTcE8JEeGVMo6JxLfZxA" name="columnName" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_1IgHEE8JEeGVMo6JxLfZxA" name="min" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_9EnCAE8JEeGVMo6JxLfZxA" name="max" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_AZIt0E8KEeGVMo6JxLfZxA" name="RangeFilter">
+          <generalization xmi:id="_AZIt0U8KEeGVMo6JxLfZxA" general="_DXmfgE8JEeGVMo6JxLfZxA"/>
+          <ownedAttribute xmi:id="_AZIt0k8KEeGVMo6JxLfZxA" name="columnName" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+          <ownedAttribute xmi:id="_AZIt008KEeGVMo6JxLfZxA" name="min" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+          <ownedAttribute xmi:id="_AZIt1E8KEeGVMo6JxLfZxA" name="max" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BifikE8KEeGVMo6JxLfZxA" name="DateRangeFilter">
+        <generalization xmi:id="_BifikU8KEeGVMo6JxLfZxA" general="_DXmfgE8JEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_Bifikk8KEeGVMo6JxLfZxA" name="columnName" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_Bifik08KEeGVMo6JxLfZxA" name="min" type="_8QGyAE8AEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_BifilE8KEeGVMo6JxLfZxA" name="max" type="_8QGyAE8AEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_c8hZUE8LEeGVMo6JxLfZxA" name="ValueFilter">
+        <generalization xmi:id="_c8hZUU8LEeGVMo6JxLfZxA" general="_DXmfgE8JEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_c8hZUk8LEeGVMo6JxLfZxA" name="columnName" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_c8iAYE8LEeGVMo6JxLfZxA" name="value" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FtnNQE8MEeGVMo6JxLfZxA" name="DateValueFilter">
+        <generalization xmi:id="_FtnNQU8MEeGVMo6JxLfZxA" general="_DXmfgE8JEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_FtnNQk8MEeGVMo6JxLfZxA" name="columnName" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_FtnNQ08MEeGVMo6JxLfZxA" name="value" type="_8QGyAE8AEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hpm-EE8MEeGVMo6JxLfZxA" name="Participant" isAbstract="true">
+        <ownedComment xmi:id="_lQEucE8MEeGVMo6JxLfZxA">
+          <body>Details of a participant, his name and his share of the bill</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_DE6QME8NEeGVMo6JxLfZxA" name="myFBId" type="_-0bv8E8AEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_LMk64E8NEeGVMo6JxLfZxA" name="myShare" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Pspz0E8NEeGVMo6JxLfZxA" name="FixedShareParticipant">
+        <ownedComment xmi:id="_Pspz0U8NEeGVMo6JxLfZxA">
+          <body>Details of a participant, his name and his fixed share of the bill</body>
+        </ownedComment>
+        <generalization xmi:id="_opcBgE8NEeGVMo6JxLfZxA" general="_hpm-EE8MEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hR1h0E8NEeGVMo6JxLfZxA" name="PieSliceParticipant">
+        <ownedComment xmi:id="_hR1h0U8NEeGVMo6JxLfZxA">
+          <body>Details of a participant, his name and his slice of the total bill</body>
+        </ownedComment>
+        <generalization xmi:id="_lmJPoE8NEeGVMo6JxLfZxA" general="_hpm-EE8MEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_rnZncE8NEeGVMo6JxLfZxA" name="mySlice" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_r_k24E8NEeGVMo6JxLfZxA" name="totalPie" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4-6bIE8NEeGVMo6JxLfZxA" name="Bill">
+        <ownedComment xmi:id="_9ldIcE8NEeGVMo6JxLfZxA">
+          <body>Details about a single bill.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_FbbmME8OEeGVMo6JxLfZxA" name="paidById" type="_-0bv8E8AEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_DnhjIE8PEeGVMo6JxLfZxA" name="paidFor" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_I3rOIE8PEeGVMo6JxLfZxA" name="description" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_LXanAE8PEeGVMo6JxLfZxA" name="timestamp" type="_8QGyAE8AEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_PBrSQE8PEeGVMo6JxLfZxA" name="amount" type="_JiZugE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_TqAIQE8PEeGVMo6JxLfZxA" name="participants" type="_hpm-EE8MEeGVMo6JxLfZxA" aggregation="composite" association="_cPNDgE8PEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xz8ZIE8PEeGVMo6JxLfZxA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cPNDgE8PEeGVMo6JxLfZxA" name="BillParticipants" memberEnd="_cPNqkE8PEeGVMo6JxLfZxA _TqAIQE8PEeGVMo6JxLfZxA">
+        <ownedComment xmi:id="_cPNDgU8PEeGVMo6JxLfZxA">
+          <body>One To Many Association between the BalanceSheet and Payables&#xD;
+</body>
+        </ownedComment>
+        <ownedEnd xmi:id="_cPNqkE8PEeGVMo6JxLfZxA" name="" type="_4-6bIE8NEeGVMo6JxLfZxA" aggregation="composite" association="_cPNDgE8PEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cPNqkU8PEeGVMo6JxLfZxA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cPNqkk8PEeGVMo6JxLfZxA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_oP-RQE8QEeGVMo6JxLfZxA" name="messages">
+    <ownedComment xmi:id="_srWQYE8QEeGVMo6JxLfZxA">
+      <body>Request and Response messages exchanged between Server and Client&#xD;
+&#xD;
+</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Model" xmi:id="_rhdQIE8QEeGVMo6JxLfZxA" name="Messages Model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZramME8REeGVMo6JxLfZxA" name="AuthorizedRequest" isAbstract="true">
+        <generalization xmi:id="_cXa5cE8REeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_bwnisE8SEeGVMo6JxLfZxA" name="AuthToken" type="_hG2nkE8SEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_uxXPwE8SEeGVMo6JxLfZxA" name="C2DM_AuthToken" type="_hG2nkE8SEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jEvtEE8REeGVMo6JxLfZxA" name="Request" isAbstract="true">
+        <ownedBehavior xmi:type="uml:FunctionBehavior" xmi:id="_JFA30E8VEeGVMo6JxLfZxA" name="performService"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_hG2nkE8SEeGVMo6JxLfZxA" name="long"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OY43IE8TEeGVMo6JxLfZxA" name="StoreBillsRequest">
+        <generalization xmi:id="_Tgx-AE8TEeGVMo6JxLfZxA" general="_ZramME8REeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_a_l48E8TEeGVMo6JxLfZxA" name="reportedBills" type="_4-6bIE8NEeGVMo6JxLfZxA" aggregation="composite" association="_g00m8E8TEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3hIUE8TEeGVMo6JxLfZxA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VohtoE8TEeGVMo6JxLfZxA" name="BalanceSheetRequest">
+        <generalization xmi:id="_VohtoU8TEeGVMo6JxLfZxA" general="_ZramME8REeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XiSroE8TEeGVMo6JxLfZxA" name="TopThreeBalanceSheetRequest">
+        <generalization xmi:id="_XiTSsE8TEeGVMo6JxLfZxA" general="_VohtoE8TEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_g00m8E8TEeGVMo6JxLfZxA" name="StoreBills" memberEnd="_g00m8k8TEeGVMo6JxLfZxA _a_l48E8TEeGVMo6JxLfZxA">
+        <ownedComment xmi:id="_g00m8U8TEeGVMo6JxLfZxA">
+          <body>One To Many Association between the REquest and Bills&#xD;
+</body>
+        </ownedComment>
+        <ownedEnd xmi:id="_g00m8k8TEeGVMo6JxLfZxA" name="" type="_OY43IE8TEeGVMo6JxLfZxA" aggregation="composite" association="_g00m8E8TEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g00m808TEeGVMo6JxLfZxA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g00m9E8TEeGVMo6JxLfZxA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8MosoE8TEeGVMo6JxLfZxA" name="HistoryRequest">
+        <generalization xmi:id="_8MosoU8TEeGVMo6JxLfZxA" general="_ZramME8REeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ALl1gE8UEeGVMo6JxLfZxA" name="RecentHistoryRequest">
+        <generalization xmi:id="_ALmckE8UEeGVMo6JxLfZxA" general="_ZramME8REeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BicTsE8UEeGVMo6JxLfZxA" name="FilteredHistoryRequest">
+        <generalization xmi:id="_BicTsU8UEeGVMo6JxLfZxA" general="_ZramME8REeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_DjUmUE8UEeGVMo6JxLfZxA" name="filters" type="_DXmfgE8JEeGVMo6JxLfZxA" aggregation="composite" association="_GAVbUE8UEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ez6rgE8UEeGVMo6JxLfZxA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GAVbUE8UEeGVMo6JxLfZxA" name="filtersinRequest" memberEnd="_GAVbUk8UEeGVMo6JxLfZxA _DjUmUE8UEeGVMo6JxLfZxA">
+        <ownedComment xmi:id="_GAVbUU8UEeGVMo6JxLfZxA">
+          <body>One To Many Association between the REquest and Filters&#xD;
+&#xD;
+</body>
+        </ownedComment>
+        <ownedEnd xmi:id="_GAVbUk8UEeGVMo6JxLfZxA" name="" type="_BicTsE8UEeGVMo6JxLfZxA" aggregation="composite" association="_GAVbUE8UEeGVMo6JxLfZxA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GAVbU08UEeGVMo6JxLfZxA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GAVbVE8UEeGVMo6JxLfZxA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hg8QoE8UEeGVMo6JxLfZxA" name="GeneralACKResponse">
+        <ownedComment xmi:id="_taKhYE8UEeGVMo6JxLfZxA">
+          <body>ACknowledgement to request messages.</body>
+        </ownedComment>
+        <generalization xmi:id="_mALcEE8UEeGVMo6JxLfZxA" general="_kTl-cE8UEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_n819EE8UEeGVMo6JxLfZxA" name="msgACK" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kTl-cE8UEeGVMo6JxLfZxA" name="Response" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AJBNME8VEeGVMo6JxLfZxA" name="ErrorResponse">
+        <ownedComment xmi:id="_AJBNMU8VEeGVMo6JxLfZxA">
+          <body>Error details to request messages. In case error occurs for &#xD;
+performed services over the request message&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:id="_AJBNMk8VEeGVMo6JxLfZxA" general="_hg8QoE8UEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_AJBNM08VEeGVMo6JxLfZxA" name="errMsg" type="_4HStEE8BEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_OJZXsE8VEeGVMo6JxLfZxA" name="errNo" type="_-0bv8E8AEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_a7WAME8VEeGVMo6JxLfZxA" name="StoreBillsResponse">
+        <ownedComment xmi:id="_a7WAMU8VEeGVMo6JxLfZxA">
+          <body>Response Message acknowledging storing the bills.</body>
+        </ownedComment>
+        <generalization xmi:id="_a7WAMk8VEeGVMo6JxLfZxA" general="_hg8QoE8UEeGVMo6JxLfZxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hlsYUE8VEeGVMo6JxLfZxA" name="BalanceSheetResponse">
+        <ownedComment xmi:id="_hlsYUU8VEeGVMo6JxLfZxA">
+          <body>Response Message for sending balance sheet&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:id="_hls_YE8VEeGVMo6JxLfZxA" general="_hg8QoE8UEeGVMo6JxLfZxA"/>
+        <ownedAttribute xmi:id="_z2B8IE8VEeGVMo6JxLfZxA" name="ledger"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Package>
