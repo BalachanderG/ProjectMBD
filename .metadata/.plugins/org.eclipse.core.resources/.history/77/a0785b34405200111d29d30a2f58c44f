@@ -1,0 +1,349 @@
+package in.co.blackphoenix.shexp.mysql;
+
+import in.co.blackphoenix.shexp.messaging.data.BalanceSheet;
+import in.co.blackphoenix.shexp.messaging.data.Bills;
+import in.co.blackphoenix.shexp.messaging.data.Payables;
+import in.co.blackphoenix.shexp.messaging.data.Receivables;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
+
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Query;
+import javax.jdo.Transaction;
+
+/**
+ * Class that holds functions for performing necessary 
+ * data storage and retrieval actions 
+ * 
+ * @author Manoj
+ *
+ */
+public class DataManager {
+	
+	private static String JDOSQLQUERY = "javax.jdo.query.SQL";
+
+	/**
+	 * get the data persistence manager - manages the data base connection
+	 * @return
+	 */
+	private static PersistenceManager getDataPersister(){
+		Properties props = new Properties();
+		props.setProperty("datanucleus.ConnectionDriverName","com.mysql.jdbc.Driver");
+		props.setProperty("datanucleus.ConnectionURL","jdbc:mysql://localhost/jdotest");
+		props.setProperty("datanucleus.ConnectionUserName","root");
+		props.setProperty("datanucleus.ConnectionPassword","");
+		props.setProperty("datanucleus.connectionPoolingType", "DBCP");
+		props.setProperty("datanucleus.autoCreateSchema", "true");
+		props.setProperty("datanucleus.validateTables", "false");
+		props.setProperty("datanucleus.validateConstraints", "false");
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory(props);
+		PersistenceManager pm = pmf.getPersistenceManager();
+		return pm;
+	}
+
+	/**
+	 * store the bills in the table
+	 * @param reportedBills - list of bills to be stored
+	 * @return - true - if the data was stored successfully <br/> false - if the data cannot be stored.ss
+	 */
+	public static boolean storeTheBills(List<Bills> reportedBills){
+
+		// Creating a persistence manager that talks to the data base
+		PersistenceManager pm = getDataPersister();
+
+		// creating transaction
+		Transaction tx= pm.currentTransaction();
+		
+		boolean result = true;
+		
+		try{
+			tx.begin();
+			{
+
+				//adding the details of the bills to the transaction
+				for(Bills reportedBill : reportedBills){
+
+					pm.makePersistent(reportedBill);
+				}
+
+				//committing the transaction
+				tx.commit();
+			}
+
+		}finally{
+			
+			// TODO Add suitable exceptions before finally
+			
+			// If the transaction is active throw an exception
+			if(tx.isActive()){
+				
+				tx.rollback();
+				
+				result = false;
+			}
+			pm.close();
+		}
+
+		return result;
+	}
+	
+	
+	/**
+	 * get the balance sheet for the given person
+	 * @param fbId - Facebook id of the user 
+	 * @return 
+	 */
+	public static BalanceSheet getBalanceSheet(int fbId){
+		
+		PersistenceManager pm = getDataPersister();
+		
+		List<Payables> payables = getListOfPayables(pm, fbId);
+		List<Receivables> receivables = getListOfReceivables(pm, fbId);
+		
+		BalanceSheet resultSheet = new BalanceSheet(payables, receivables);
+	
+		return resultSheet;
+	}
+	
+	/**
+	 * get the balance sheet for the given person
+	 * @param fbId - Facebook id of the user 
+	 * @param topN - top N people in my balancesheet
+	 * @return 
+	 */
+	public static BalanceSheet getTopNBalanceSheet(int fbId, int topN){
+		
+		PersistenceManager pm = getDataPersister();
+		
+		List<Payables> payables = getListOfPayables(pm, fbId, topN);
+		List<Receivables> receivables = getListOfReceivables(pm, fbId, topN);
+		
+		BalanceSheet resultSheet = new BalanceSheet(payables, receivables);
+	
+		return resultSheet;
+	}
+	
+	public static List<Bills> getBillHistory(int fbId){
+		
+		PersistenceManager pm = getDataPersister();
+		
+		Query historyQuery = queryBillsFromStoredBills(pm);
+		historyQuery.setFilter("myfbid = " + fbId);
+		
+		List<Bills> result = (List<Bills>) historyQuery.execute();
+		
+		return result';
+	}
+	
+	/**
+	 * GEt the list of payables from the balance sheet table
+	 * execute the query and get the results
+	 * @param pm - database connection manager
+	 * @param fbId - id of the user in facebook
+	 * @return - list of payables
+	 */
+	@SuppressWarnings("rawtypes")
+	private static List<Payables> getListOfPayables(PersistenceManager pm, int fbId){
+
+		// Get the list of payables from the balance sheet
+		Query payablesQuery = queryPayablesFromBalanceSheet(pm);
+		payablesQuery.setResultClass(Payables.class);
+		List result = (List)payablesQuery.execute(fbId);
+		Iterator rIterator = result.iterator();
+
+		List<Payables> payables = new ArrayList<Payables>();
+
+		while(rIterator.hasNext()){
+
+			//adding the list of results to the payables
+			payables.add((Payables) rIterator.next());
+		}
+		
+		return payables;
+	}
+	
+	/**
+	 * GEt the list of payables from the balance sheet table
+	 * execute the query and get the results
+	 * @param pm - database connection manager
+	 * @param fbId - id of the user in facebook
+	 * @param numberOfPayables - top N whom i have to pay
+	 * @return - list of payables
+	 */
+	@SuppressWarnings("rawtypes")
+	private static List<Payables> getListOfPayables(PersistenceManager pm, int fbId, int numberOfPayables){
+
+		// Get the list of payables from the balance sheet
+		Query payablesQuery = queryTopNPayablesFromBalanceSheet(pm);
+		payablesQuery.setResultClass(Payables.class);
+		List result = (List)payablesQuery.execute(fbId, numberOfPayables);
+		Iterator rIterator = result.iterator();
+
+		List<Payables> payables = new ArrayList<Payables>();
+
+		while(rIterator.hasNext()){
+
+			//adding the list of results to the payables
+			payables.add((Payables) rIterator.next());
+		}
+		
+		return payables;
+	}
+	
+	/**
+	 * Get the receivables from the balance sheet
+	 * @param pm - database connection manager 
+	 * @param fbId - user id in facebook
+	 * @return - list of people who owe me money
+	 */
+	@SuppressWarnings("rawtypes")
+	private static List<Receivables> getListOfReceivables(PersistenceManager pm, int fbId){
+
+		//get the list of receivables from the balance sheet
+		Query receivablesQuery = queryReceivablesFromBalanceSheet(pm);
+		receivablesQuery.setResultClass(Receivables.class);
+		List result = (List)receivablesQuery.execute(fbId);
+		Iterator rIterator = result.iterator();
+
+		List<Receivables> receivables = new ArrayList<Receivables>();
+
+		while(rIterator.hasNext()){
+
+			//adding the list of results to the receivables
+			receivables.add((Receivables) rIterator.next());
+		}
+
+		return receivables;
+	}
+	
+	/**
+	 * Get the receivables from the balance sheet
+	 * @param pm - database connection manager 
+	 * @param fbId - user id in facebook
+	 * @param numberOfReceivables - Top N who needs to pay me
+	 * @return - list of people who owe me money
+	 */
+	@SuppressWarnings("rawtypes")
+	private static List<Receivables> getListOfReceivables(PersistenceManager pm, int fbId, int numberOfReceivables){
+
+		//get the list of receivables from the balance sheet
+		Query receivablesQuery = queryTopNReceivablesFromBalanceSheet(pm);
+		receivablesQuery.setResultClass(Receivables.class);
+		List result = (List)receivablesQuery.execute(fbId, numberOfReceivables);
+		Iterator rIterator = result.iterator();
+
+		List<Receivables> receivables = new ArrayList<Receivables>();
+
+		while(rIterator.hasNext()){
+
+			//adding the list of results to the receivables
+			receivables.add((Receivables) rIterator.next());
+		}
+
+		return receivables;
+	}
+	
+	/**
+	 * Query the balance sheet for the payables
+	 * @param pm - database connection manager from datanucleus
+	 * @return - query object
+	 */
+	private static Query queryPayablesFromBalanceSheet(PersistenceManager pm){
+		
+		Query resultQuery = pm.newQuery(JDOSQLQUERY, "SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = ? AND our_balance >= 0 ORDER BY our_balance DESC");
+		
+		return resultQuery;
+	}
+	
+	/**
+	 * Query the receivables from the balance sheet
+	 * @param pm - database connection manager from datanucleus
+	 * @return - query object
+	 */
+	private static Query queryReceivablesFromBalanceSheet(PersistenceManager pm){
+		
+		Query resultQuery = pm.newQuery(JDOSQLQUERY, "SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = ? AND our_balance < 0 ORDER BY our_balance ASC");
+		
+		return resultQuery;
+	}
+	
+	/**
+	 * Query the Top N payables from the balance sheet
+	 * @param pm - database connection manager from datanucleus
+	 * @return - query object
+	 */
+	private static Query queryTopNPayablesFromBalanceSheet(PersistenceManager pm){
+
+		Query resultQuery = pm.newQuery(JDOSQLQUERY, "SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = ?1 AND our_balance >= 0 ORDER BY our_balance DESC LIMIT ?2");
+		
+		return resultQuery;
+		
+	}
+	
+	/**
+	 * Query top N receivables from the balance sheet
+	 * @param pm - database connection manager from datanucleus
+	 * @return - query object
+	 */
+	private static Query queryTopNReceivablesFromBalanceSheet(PersistenceManager pm){
+
+		Query resultQuery = pm.newQuery(JDOSQLQUERY, "SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = ?1 AND our_balance < 0 ORDER BY our_balance ASC LIMIT ?2");
+		
+		return resultQuery;
+		
+	}
+	
+	/**
+	 * Query the Bill history from the stored bills
+	 * @param pm - database connection manager from datanucleus
+	 * @return - query object
+	 */
+	private static Query queryBillsFromStoredBills(PersistenceManager pm){
+		
+		Query result = pm.newQuery(Bills.class);
+		
+		return result;
+	}
+	
+	
+	/**
+	 * Update the payables in the balance sheet
+	 * @param pm - database connection manager from datanucleus
+	 * @return - query object
+	 */
+	private static Query updatePayablesInBalanceSheet(PersistenceManager pm){
+		
+		Query result = pm.newQuery(JDOSQLQUERY, "INSERT INTO balancesheet (i_am, you_are, i_owe_you) (SELECT bills.paidbyid, participant.myfbid, SUM(participant.myshareofbill) FROM bills JOIN participant ON bills.id = participant.bills_id where bills.paidbyid <> participant.myfbid group by participant.myfbid,bills.paidbyid)ON DUPLICATE KEY UPDATE i_owe_you = VALUES(i_owe_you)");
+		
+		return result;
+	}
+	
+	/**
+	 * Update the receivables in the balance sheet 
+	 * @param pm - database connection manager from datanucleus
+	 * @return - query object
+	 */
+	private static Query updateReceivablesInBalanceSheet(PersistenceManager pm){
+		
+		Query result = pm.newQuery(JDOSQLQUERY, "INSERT INTO balancesheet (you_are, i_am, you_owe_me) (SELECT bills.paidbyid, participant.myfbid, SUM(participant.myshareofbill) FROM bills JOIN participant ON bills.id = participant.bills_id where bills.paidbyid <> participant.myfbid group by participant.myfbid,bills.paidbyid)ON DUPLICATE KEY UPDATE you_owe_me = VALUES(you_owe_me)");
+		
+		return result;
+	}
+	
+	/**
+	 * update the balance sheet after the payables and receivables 
+	 * @param pm - database connection manager from datanucleus
+	 * @return - query object
+	 */
+	private static Query updateBalanceSheet(PersistenceManager pm){
+		
+		Query result = pm.newQuery(JDOSQLQUERY, "UPDATE balancesheet SET our_balance = i_owe_you - you_owe_me");
+		
+		return result;
+	}
+}

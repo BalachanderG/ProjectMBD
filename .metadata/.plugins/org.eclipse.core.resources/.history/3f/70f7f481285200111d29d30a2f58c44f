@@ -1,0 +1,80 @@
+package in.co.blackphoenix.shexp.messaging.requests;
+
+import in.co.blackphoenix.shexp.messaging.data.HistoryFilter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+
+import com.grl.json.messages.Response;
+
+/**
+ * Request message for requesting reported bills from server
+ * @author Manoj
+ *
+ */
+public class FilteredHistoryRequest extends AuthorizedRequest {
+
+	private List<HistoryFilter> filters;
+	
+	/**
+	 * Construct a request message for report history
+	 * @param fbId - Id of the user in facebook
+	 * @param fbAuthToken - authorization token from fb
+	 * @param c2dmToken - Cloud to Device message Token
+	 * @param filters - filter conditions
+	 */
+	public FilteredHistoryRequest(int fbId, long fbAuthToken, long c2dmToken,
+			List<HistoryFilter> filters) {
+		super(fbId, fbAuthToken, c2dmToken);
+		this.filters = filters;
+		
+		//TODO check for null and return an exception
+	}
+
+	/**
+	 * Construct a request message for report history
+	 * @param fbAuthToken - authorization token from fb
+	 * @param c2dmToken - Cloud to Device message Token
+	 * @param filter - filter condition
+	 */
+	public FilteredHistoryRequest(long fbAuthToken, long c2dmToken,
+			HistoryFilter filter) {
+		super(fbAuthToken, c2dmToken);
+		this.filters = new ArrayList<HistoryFilter>();
+		filters.add(filter);
+	}
+
+	/**
+	 * Add a condition to the list of filters
+	 * @param filter - new filter
+	 */
+	public void addFilter(HistoryFilter filter){
+		
+		this.filters.add(filter);
+	}
+	/**
+	 * @return the filters
+	 */
+	public List<HistoryFilter> getFilters() {
+		return filters;
+	}
+
+
+	/**
+	 * @param filters the filters to set
+	 */
+	public void setFilters(List<HistoryFilter> filters) {
+		this.filters = filters;
+	}
+
+
+
+	@Override
+	public Response performService(HttpSession arg0) {
+		// TODO Request for history of bills server
+		return null;
+	}
+
+}

@@ -1,0 +1,72 @@
+package in.co.blackphoenix.shexp.mysql;
+
+import in.co.blackphoenix.shexp.jdo.PMF;
+import in.co.blackphoenix.shexp.messaging.data.Bills;
+
+import java.util.List;
+import java.util.Properties;
+
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Transaction;
+
+/**
+ * Class that holds functions for performing necessary 
+ * data storage and retrieval actions 
+ * 
+ * @author Manoj
+ *
+ */
+public class DataManager {
+
+	/**
+	 * get the data persistence manager - manages the data base connection
+	 * @return
+	 */
+	private static PersistenceManager getDataPersister(){
+		Properties props = new Properties();
+		props.setProperty("datanucleus.ConnectionDriverName","com.mysql.jdbc.Driver");
+		props.setProperty("datanucleus.ConnectionURL","jdbc:mysql://localhost/jdotest");
+		props.setProperty("datanucleus.ConnectionUserName","root");
+		props.setProperty("datanucleus.ConnectionPassword","");
+		props.setProperty("datanucleus.connectionPoolingType", "DBCP");
+		props.setProperty("datanucleus.autoCreateSchema", "true");
+		props.setProperty("datanucleus.validateTables", "false");
+		props.setProperty("datanucleus.validateConstraints", "false");
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory(props);
+		PersistenceManager pm = pmf.getPersistenceManager();
+		return pm;
+	}
+
+	public static boolean storeTheBills(List<Bills> reportedBills){
+
+		// Creating a persistence manager that talks to the data base
+		PersistenceManager pm = getDataPersister();
+
+		// creating transaction
+		Transaction tx= pm.currentTransaction();
+		
+		
+			tx.begin();
+			{
+
+				//adding the details of the bills to the transaction
+				for(Bills reportedBill : reportedBills){
+
+					pm.makePersistent(reportedBill);
+				}
+
+				//committing the transaction
+				tx.commit();
+			}
+
+		
+			if(tx.isActive())
+				tx.rollback();
+			pm.close();
+		
+
+		return true;
+	}
+}

@@ -1,7 +1,11 @@
 QUERY 1 INSERT 
 
-INSERT INTO balancesheet (i_am, you_are, i_owe_you) (SELECT bill.paidby, perusertransaction.myname, SUM(perusertransaction.mypart) FROM bill JOIN perusertransaction ON bill.id = perusertransaction.bill_id where bill.paidby <> perusertransaction.myname group by perusertransaction.myname,bill.paidby)ON DUPLICATE KEY UPDATE i_owe_you = VALUES(i_owe_you)
+INSERT INTO balancesheet (i_am, you_are, i_owe_you) (SELECT bills.paidbyid, participant.myfbid, SUM(participant.myshareofbill) FROM bills JOIN participant ON bills.id = participant.bills_id where bills.paidbyid <> participant.myfbid group by participant.myfbid,bills.paidbyid)ON DUPLICATE KEY UPDATE i_owe_you = VALUES(i_owe_you)
 
-INSERT INTO balancesheet (you_are, i_am, you_owe_me) (SELECT bill.paidby, perusertransaction.myname, SUM(perusertransaction.mypart) FROM bill JOIN perusertransaction ON bill.id = perusertransaction.bill_id where bill.paidby <> perusertransaction.myname group by perusertransaction.myname,bill.paidby)ON DUPLICATE KEY UPDATE you_owe_me = VALUES(you_owe_me)
+INSERT INTO balancesheet (you_are, i_am, you_owe_me) (SELECT bills.paidbyid, participant.myfbid, SUM(participant.myshareofbill) FROM bills JOIN participant ON bills.id = participant.bills_id where bills.paidbyid <> participant.myfbid group by participant.myfbid,bills.paidbyid)ON DUPLICATE KEY UPDATE you_owe_me = VALUES(you_owe_me)
 
 UPDATE balancesheet SET our_balance = i_owe_you - you_owe_me
+
+SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = " + fbId + " AND our_balance >= 0"
+
+SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = " + fbId + " AND our_balance < 0"

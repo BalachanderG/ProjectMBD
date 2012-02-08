@@ -8,13 +8,16 @@ public abstract class AuthorizedRequest extends Request{
 	
 	private long C2DMToken; // Authorization token for Cloud to Device Messaging Token
 	
+	private int fbId; // facebook id for the user
+	
 	/**
 	 * Construct a request message with 
 	 * @param fbAuthToken - token for fb auth
 	 * @param c2dmToken - token for cloud to Device Msg
 	 */
-	public AuthorizedRequest(long fbAuthToken, long c2dmToken) {
+	public AuthorizedRequest(int fbId, long fbAuthToken, long c2dmToken) {
 		
+		this.fbId = fbId;
 		this.fbAuthToken = fbAuthToken;
 		C2DMToken = c2dmToken;
 	}
@@ -46,6 +49,20 @@ public abstract class AuthorizedRequest extends Request{
 	 */
 	public void setC2DMToken(long c2dmToken) {
 		C2DMToken = c2dmToken;
+	}
+
+	/**
+	 * @return the fbId
+	 */
+	public int getFbId() {
+		return fbId;
+	}
+
+	/**
+	 * @param fbId the fbId to set
+	 */
+	public void setFbId(int fbId) {
+		this.fbId = fbId;
 	}
 	
 	

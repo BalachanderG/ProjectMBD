@@ -1,0 +1,159 @@
+package in.co.blackphoenix.shexp.mysql;
+
+import in.co.blackphoenix.shexp.messaging.data.Bills;
+
+import java.util.List;
+import java.util.Properties;
+
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Query;
+import javax.jdo.Transaction;
+
+/**
+ * Class that holds functions for performing necessary 
+ * data storage and retrieval actions 
+ * 
+ * @author Manoj
+ *
+ */
+public class DataManager {
+	
+	private static String JDOSQLQUERY = "javax.jdo.query.SQL";
+
+	/**
+	 * get the data persistence manager - manages the data base connection
+	 * @return
+	 */
+	private static PersistenceManager getDataPersister(){
+		Properties props = new Properties();
+		props.setProperty("datanucleus.ConnectionDriverName","com.mysql.jdbc.Driver");
+		props.setProperty("datanucleus.ConnectionURL","jdbc:mysql://localhost/jdotest");
+		props.setProperty("datanucleus.ConnectionUserName","root");
+		props.setProperty("datanucleus.ConnectionPassword","");
+		props.setProperty("datanucleus.connectionPoolingType", "DBCP");
+		props.setProperty("datanucleus.autoCreateSchema", "true");
+		props.setProperty("datanucleus.validateTables", "false");
+		props.setProperty("datanucleus.validateConstraints", "false");
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory(props);
+		PersistenceManager pm = pmf.getPersistenceManager();
+		return pm;
+	}
+
+	/**
+	 * store the bills in the table
+	 * @param reportedBills - list of bills to be stored
+	 * @return - true - if the data was stored successfully <br/> false - if the data cannot be stored.ss
+	 */
+	public static boolean storeTheBills(List<Bills> reportedBills){
+
+		// Creating a persistence manager that talks to the data base
+		PersistenceManager pm = getDataPersister();
+
+		// creating transaction
+		Transaction tx= pm.currentTransaction();
+		
+		boolean result = true;
+		
+		try{
+			tx.begin();
+			{
+
+				//adding the details of the bills to the transaction
+				for(Bills reportedBill : reportedBills){
+
+					pm.makePersistent(reportedBill);
+				}
+
+				//committing the transaction
+				tx.commit();
+			}
+
+		}finally{
+			
+			// TODO Add suitable exceptions before finally
+			
+			// If the transaction is active throw an exception
+			if(tx.isActive()){
+				
+				tx.rollback();
+				
+				result = false;
+			}
+			pm.close();
+		}
+
+		return result;
+	}
+	
+	
+	/**
+	 * get the balance sheet for the given person
+	 * @param fbId - Facebook id of the user 
+	 * @return 
+	 */
+	public static BalanceSheet getBalanceSheet(int fbId){
+		
+		
+		
+	}
+	
+	private static Query queryPayablesFromBalanceSheet(PersistenceManager pm){
+		
+		Query resultQuery = pm.newQuery(JDOSQLQUERY, "SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = ? AND our_balance >= 0 ORDER BY our_balance DESC");
+		
+		return resultQuery;
+	}
+	
+	private static Query queryReceivablesFromBalanceSheet(PersistenceManager pm){
+		
+		Query resultQuery = pm.newQuery(JDOSQLQUERY, "SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = ? AND our_balance < 0 ORDER BY our_balance ASC");
+		
+		return resultQuery;
+	}
+	
+	private static Query queryTopNPayablesFromBalanceSheet(PersistenceManager pm){
+
+		Query resultQuery = pm.newQuery(JDOSQLQUERY, "SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = ?1 AND our_balance >= 0 ORDER BY our_balance DESC LIMIT ?2");
+		
+		return resultQuery;
+		
+	}
+	
+	private static Query queryTopNReceivablesFromBalanceSheet(PersistenceManager pm){
+
+		Query resultQuery = pm.newQuery(JDOSQLQUERY, "SELECT (you_are, our_balance) FROM balancesheet WHERE i_am = ?1 AND our_balance < 0 ORDER BY our_balance ASC LIMIT ?2");
+		
+		return resultQuery;
+		
+	}
+	
+	private static Query queryBillsFromStoredBills(PersistenceManager pm){
+		
+		Query result = pm.newQuery(Bills.class);
+		
+		return result;
+	}
+	
+	
+	private static Query updatePayablesInBalanceSheet(PersistenceManager pm){
+		
+		Query result = pm.newQuery(JDOSQLQUERY, "INSERT INTO balancesheet (i_am, you_are, i_owe_you) (SELECT bills.paidbyid, participant.myfbid, SUM(participant.myshareofbill) FROM bills JOIN participant ON bills.id = participant.bills_id where bills.paidbyid <> participant.myfbid group by participant.myfbid,bills.paidbyid)ON DUPLICATE KEY UPDATE i_owe_you = VALUES(i_owe_you)");
+		
+		return result;
+	}
+	
+	private static Query updateReceivablesInBalanceSheet(PersistenceManager pm){
+		
+		Query result = pm.newQuery(JDOSQLQUERY, "INSERT INTO balancesheet (you_are, i_am, you_owe_me) (SELECT bills.paidbyid, participant.myfbid, SUM(participant.myshareofbill) FROM bills JOIN participant ON bills.id = participant.bills_id where bills.paidbyid <> participant.myfbid group by participant.myfbid,bills.paidbyid)ON DUPLICATE KEY UPDATE you_owe_me = VALUES(you_owe_me)");
+		
+		return result;
+	}
+	private static Query updateBalanceSheet(PersistenceManager pm){
+		
+		Query result = pm.newQuery(JDOSQLQUERY, "UPDATE balancesheet SET our_balance = i_owe_you - you_owe_me");
+		
+		return result;
+	}
+}

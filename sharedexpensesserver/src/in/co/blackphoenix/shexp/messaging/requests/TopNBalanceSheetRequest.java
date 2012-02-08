@@ -1,5 +1,9 @@
 package in.co.blackphoenix.shexp.messaging.requests;
 
+import in.co.blackphoenix.shexp.messaging.data.BalanceSheet;
+import in.co.blackphoenix.shexp.messaging.responses.TopNBalanceSheetResponse;
+import in.co.blackphoenix.shexp.mysql.DataManager;
+
 import javax.servlet.http.HttpSession;
 
 import com.grl.json.messages.Response;
@@ -15,14 +19,15 @@ public class TopNBalanceSheetRequest extends AuthorizedRequest {
 
 	/**
 	 * Construct a request message to get top n balances
+	 * @param fbId - Facebook id of the user
 	 * @param fbAuthToken - fb auth token
 	 * @param c2dmToken - cloud to device messaging token
 	 * @param numberOfToppers - top balances you need
 	 */
-	public TopNBalanceSheetRequest(long fbAuthToken, long c2dmToken,
+	public TopNBalanceSheetRequest(int fbId, long fbAuthToken, long c2dmToken,
 			int numberOfToppers) {
 		
-		super(fbAuthToken, c2dmToken);
+		super(fbId, fbAuthToken, c2dmToken);
 		this.numberOfToppers = numberOfToppers;
 	}
 
@@ -42,8 +47,16 @@ public class TopNBalanceSheetRequest extends AuthorizedRequest {
 
 	@Override
 	public Response performService(HttpSession arg0) {
-		// TODO Request for top n most balance sheet server
-		return null;
+		// TODO perform the FB Auth check
+		
+		//get the ledger with top N kadans 
+		BalanceSheet ledger = DataManager.getTopNBalanceSheet(getFbId(), numberOfToppers);
+		
+		//Create the response message
+		TopNBalanceSheetResponse response = new TopNBalanceSheetResponse(ledger);
+		
+		// n say bye
+		return response;
 	}
 
 }

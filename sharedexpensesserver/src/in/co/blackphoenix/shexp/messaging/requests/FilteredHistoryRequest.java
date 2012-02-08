@@ -20,13 +20,14 @@ public class FilteredHistoryRequest extends AuthorizedRequest {
 	
 	/**
 	 * Construct a request message for report history
+	 * @param fbId - Id of the user in facebook
 	 * @param fbAuthToken - authorization token from fb
 	 * @param c2dmToken - Cloud to Device message Token
 	 * @param filters - filter conditions
 	 */
-	public FilteredHistoryRequest(long fbAuthToken, long c2dmToken,
+	public FilteredHistoryRequest(int fbId, long fbAuthToken, long c2dmToken,
 			List<HistoryFilter> filters) {
-		super(fbAuthToken, c2dmToken);
+		super(fbId, fbAuthToken, c2dmToken);
 		this.filters = filters;
 		
 		//TODO check for null and return an exception
@@ -34,13 +35,14 @@ public class FilteredHistoryRequest extends AuthorizedRequest {
 
 	/**
 	 * Construct a request message for report history
+	 * @param fbId - Id of the user in faceboo
 	 * @param fbAuthToken - authorization token from fb
 	 * @param c2dmToken - Cloud to Device message Token
 	 * @param filter - filter condition
 	 */
-	public FilteredHistoryRequest(long fbAuthToken, long c2dmToken,
+	public FilteredHistoryRequest(int fbId, long fbAuthToken, long c2dmToken,
 			HistoryFilter filter) {
-		super(fbAuthToken, c2dmToken);
+		super(fbId, fbAuthToken, c2dmToken);
 		this.filters = new ArrayList<HistoryFilter>();
 		filters.add(filter);
 	}

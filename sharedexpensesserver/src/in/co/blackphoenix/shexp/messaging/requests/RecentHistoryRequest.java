@@ -13,12 +13,13 @@ public class RecentHistoryRequest extends AuthorizedRequest {
 
 	/**
 	 * Construct a request message for report of the recent bills
+	 * @param fbId - facebook user id
 	 * @param fbAuthToken - authorization token from fb
 	 * @param c2dmToken - Cloud to Device message Token
 	 */
-	public RecentHistoryRequest(long fbAuthToken, long c2dmToken) {
+	public RecentHistoryRequest(int fbId, long fbAuthToken, long c2dmToken) {
 		
-		super(fbAuthToken, c2dmToken);
+		super(fbId, fbAuthToken, c2dmToken);
 	}
 
 	@Override
